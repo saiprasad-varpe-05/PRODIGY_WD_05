@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styled.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <div class="input-group">
+      <input type="text" id="locationInput" placeholder="Enter a city name" />
+      <button id="getWeatherBtn">Get Weather</button>
+    </div>
+    
+    <!-- Loader Spinner -->
+    <div id="loader" class="loader" style="display: none;"></div>
+
+    <div id="weatherInfo" class="weather-info">
+      <h2 id="locationName"></h2>
+      <p id="temperature"></p>
+      <p id="weatherDescription"></p>
+      <p id="humidity"></p>
+      <p id="windSpeed"></p>
+    </div>
+  </div>
+
+  <script src="scripted.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ABE2, #5563DE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container Styling */
+  .container {
+    background: #fff;
+    width: 320px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Heading */
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Input Group */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #5563DE;
+  }
+  
+  button {
+    padding: 12px 15px;
+    background-color: #5563DE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3f4ab2;
+  }
+  
+  /* Weather Information */
+  .weather-info {
+    display: none; /* Initially hidden until data is loaded */
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .weather-info h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .weather-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Loader Spinner */
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #5563DE;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
